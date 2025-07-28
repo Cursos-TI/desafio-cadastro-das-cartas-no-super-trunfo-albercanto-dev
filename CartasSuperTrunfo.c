@@ -80,8 +80,8 @@ int main() {
     densidadePopulacional1 = (float) populacaoCidade1 / areaCidade1;
     densidadePopulacional2 = (float) populacaoCidade2 / areaCidade2;
     
-    pibPerCapita1 = (float) pibCidade1 / populacaoCidade1;
-    pibPerCapita2 = (float) pibCidade2 / populacaoCidade2;
+    pibPerCapita1 = (float) (pibCidade1 * 1000000000) / populacaoCidade1;
+    pibPerCapita2 = (float) (pibCidade2 * 1000000000) / populacaoCidade2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
