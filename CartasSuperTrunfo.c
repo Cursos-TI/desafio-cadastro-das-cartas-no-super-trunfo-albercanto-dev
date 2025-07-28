@@ -16,6 +16,8 @@ int main() {
     float areaCidade1, areaCidade2;
     float pibCidade1, pibCidade2;
     int pontosTuristicos1, pontosTuristicos2;
+    float densidadePopulacional1, densidadePopulacional2;
+    float pibPerCapita1, pibPerCapita2;
 
 
 
@@ -74,7 +76,13 @@ int main() {
     printf("Informe a quantidade de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
+    //calculo da densidade populacional e do pibpercapta
+    densidadePopulacional1 = (float) populacaoCidade1 / areaCidade1;
+    densidadePopulacional2 = (float) populacaoCidade2 / areaCidade2;
     
+    pibPerCapita1 = (float) pibCidade1 / populacaoCidade1;
+    pibPerCapita2 = (float) pibCidade2 / populacaoCidade2;
+
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
@@ -88,7 +96,9 @@ int main() {
     printf("População: %d \n", populacaoCidade1);
     printf("Área: %.2f Km² \n", areaCidade1);
     printf("PIB: %.2f bilhões de reais \n", pibCidade1);
-    printf("Número de Pontos Turísticos: %d", pontosTuristicos1);
+    printf("Número de Pontos Turísticos: %d \n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km² \n", densidadePopulacional1);
+    printf("PIB per Capita: %.2f reais", pibPerCapita1);
 
     printf("\n \n"); //Comando utilizado apenas para pular duas linhas e melhorar a visualização
 
@@ -100,7 +110,9 @@ int main() {
     printf("População: %d \n", populacaoCidade2);
     printf("Área: %.2f Km² \n", areaCidade2);
     printf("PIB: %.2f bilhões de reais \n", pibCidade2);
-    printf("Número de Pontos Turísticos: %d \n \n", pontosTuristicos2);
+    printf("Número de Pontos Turísticos: %d \n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km² \n", densidadePopulacional2);
+    printf("PIB per Capita: %.2f reais \n \n", pibPerCapita2);
 
 
 
